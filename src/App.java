@@ -18,7 +18,9 @@ public class App {
         // Create a PrintWriter object for writing to the file
         try(PrintWriter writer = new PrintWriter(filePath)) {
             // TODO: Write code here to iterate through the ArrayList and write each name to the file
-
+            for(String i: namesList){
+                writer.println(i);
+            }
             
             // Close the PrintWriter
             writer.close();
